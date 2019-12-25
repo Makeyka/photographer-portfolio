@@ -39,7 +39,7 @@ header {
 }
 
 .signature-heading {
-     font-family: 'Amostely Signature', cursive;
+     font-family: 'Amostely Signature', fantasy, cursive;
      font-size: 60px;
      margin-bottom: 20px;
 }
