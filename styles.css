@@ -233,7 +233,7 @@ header {
      margin-top: -30px;
 }
 
-/*
+/* 
 .carousel .carousel-control {
      top: 50%;
      width: 50px;
@@ -258,6 +258,11 @@ header {
      height: 10px;
      background-color: #384147;
      border-radius: 100%;
+}
+
+.fa-angle-right,
+.fa-angle-left {
+     display: none;
 }
 
 footer {
