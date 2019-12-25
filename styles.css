@@ -5,6 +5,8 @@
      src: url(/static/fonts/AmostelySignature.ttf);
 }
 
+*:focus { outline: none !important; }
+
 html {
      font-family: 'Roboto', sans-serif;
 }
@@ -18,7 +20,7 @@ a:hover {
      width: 100%;
      position: relative;
      vertical-align: middle;
-     border: 0.5px solid whitesmoke;
+     border: 3px solid whitesmoke;
 }
 
 header {
@@ -47,6 +49,7 @@ header {
      margin-bottom: 0;
      font-size: 25px;
      font-weight: 600;
+     color: #FFF;
 }
 
 .navbar {
@@ -138,7 +141,7 @@ header {
 .lightbox-content {
      position: relative;
      overflow: hidden;
-     border: 0.5px solid whitesmoke;
+     border: 3px solid whitesmoke;
 }
 
 .lightbox-content img {
@@ -192,4 +195,180 @@ header {
 
 .lightbox-content a:hover::after {
      opacity: 1;
+}
+
+.carousel .item {
+     color: #999;
+     font-size: 15px;
+     text-align: center;
+}
+
+.carousel .item .img-box {
+     width: 135px;
+     height: 135px;
+     margin: 0 auto;
+     padding: 5px;
+     border: 1px solid #384147;
+     border-radius: 100%;
+}
+
+.carousel .img-box img {
+     width: 100%;
+     height: 100%;
+     display: block;
+     border-radius: 100%;
+}
+
+.carousel .testimonial {
+     font-style: italic;
+     padding: 25px;
+     overflow: hidden;
+     white-space: pre-line;
+}
+
+.carousel .customer {
+     color: #384147;
+     font-weight: 300;
+     text-transform: uppercase;
+     margin-top: -30px;
+}
+
+/*
+.carousel .carousel-control {
+     top: 50%;
+     width: 50px;
+     height: 50px;
+     color: #384147;
+     transform: translateY(-50%);
+}
+*/
+
+.carousel-control {
+     color: #FFF;
+     font-size: 25px;     
+}
+
+.carousel-indicators {
+     bottom: -40px;
+}
+
+.carousel-indicators li,
+.carousel-indicators li.active {
+     width: 10px;
+     height: 10px;
+     background-color: #384147;
+     border-radius: 100%;
+}
+
+footer {
+     text-align: center;
+     background-color: #384147;
+}
+
+footer h5 {
+     color: #FFF;
+     font-family: 'Playfair Display SC', sans-serif;
+     margin-top: 15px;
+}
+
+.text-muted {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin-top: 15px;
+     color: rgba(277, 277, 277, 0.7) !important;
+}
+
+.text-muted i {
+     font-size: 30px;
+     margin-top: 10px;
+}
+
+.text-muted i.fa-instagram {
+     color: #DB5B66;
+     transition: color 0.5s;
+}
+
+.text-muted i.fa-instagram:hover {
+     color: #ED8D52;
+}
+
+.text-muted i.fa-facebook-square {
+     color: #3f79ec;
+     transition: color 0.5s;
+}
+
+.text-muted i.fa-facebook-square:hover {
+     color: #4c84f3;
+}
+
+.text-muted i.fa-whatsapp {
+     color: #2FD64B;
+     transition: color 0.5s;
+}
+
+.text-muted i.fa-whatsapp:hover {
+     color: #45f362;
+}
+
+.text-muted i.fa-envelope {
+     color: #e22525;
+     transition: color 0.5s;
+}
+
+.text-muted i.fa-envelope:hover {
+     color: #ff4444;
+}
+
+.input-group .btn {
+     color: #FFF;
+     background-color: #1F1F1F;
+     transition: opacity 0.7s;
+}
+
+.input-group .btn:hover {
+     opacity: 0.7;
+}
+
+
+@media screen and (min-width: 768px) {
+     .navbar {
+          background-color: transparent;
+     }
+
+     .navbar-nav {
+          margin: auto;
+          padding: 0;
+     }
+
+     .nav-link {
+          color: #384147;
+     }
+
+     .nav-link:hover {
+          color: inherit;
+     }
+
+     nav:hover .nav-link:not(:hover) {
+          opacity: 0.5;
+          transition: opacity 0.5s;
+     }
+     
+     .about-content {
+          position: relative;
+          display: block;
+     }
+
+     .about-description {
+          position: absolute;
+          top: 80%;
+          transform: translateY(-50%);
+          width: 60%;
+          outline-offset: -10px;
+     }
+
+     .about-img img {
+          width: 80%;
+          margin-left: auto;
+     }
 }
